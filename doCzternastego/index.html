@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js" language="JavaScript"></script>
+    <meta charset="UTF-8">
+    <title>Zadanka</title>
+</head>
+<body>
+    <form name="calculatorForm" action="" method="GET">
+        Wpisz pierwszą liczbę: <br>
+        <input type="number" name="inputbox" id="jeden"><br>
+        Wpisz drugą liczbę: <br>
+        <input type="number" name="inputbox" id="dwa"><br>
+        Wybierz działanie: <br>
+        <input type="radio" id="pomnoz" name="dzialanie">Mnożenie<br>   
+        <input type="radio" id="podziel" name="dzialanie">Dzielenie<br>   
+        <input type="radio" id="dodaj" name="dzialanie">Dodawanie<br>  
+        <input type="radio" id="odejmij" name="dzialanie">Odejmowanie<br>
+        <input type="button" name="button" value="Click" onClick="handleCalculatorForm(this.form)">
+    </FORM>
+    <div id="calcResult"></div><br><br>
+
+    <form name="palindromeForm" action="" method="GET">
+        Wpisz palindrom: <br>
+        <input type="text" name="inputbox" value=""><p>
+        <input type="button" name="button" value="Click" onClick="handlePalindromeForm(this.form)">
+        </form>
+    <div id="palindromeResult"></div><br><br>
+
+    <form name="arrayForm" action="" method="GET">
+        Kliknij: <br>
+        <input type="button" name="button" value="Click" onClick="handleArrayForm()">
+    </form>
+    <div id="arrayResult"></div><br><br>
+</body>
+</html>
